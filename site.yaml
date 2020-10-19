@@ -21,7 +21,7 @@
      copy:
        src: index.php
        dest: /var/www/html/
-   - name: NGINX start
+   - name: NGINX starting
      become: yes
      service:
          name: nginx
