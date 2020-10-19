@@ -47,3 +47,4 @@ backend http_server
 {% for servers in groups['webservers'] %}
     server {{ hostvars[servers]['inventory_hostname'] }} {{ hostvars[servers]['ansible_default_ipv4']['address'] }}:80 check 
 {% endfor %}
+
